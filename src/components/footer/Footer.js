@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import {logo} from "../../assets/index"
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
             <FaTwitter />
           </span>
           <span className="bannerIcon">
-            <FaLinkedinIn />
+            <a href='https://www.linkedin.com/in/md-arshad-alam-ba087317a' target="blank"><FaLinkedinIn /></a>
           </span>
         </div>
       </div>
@@ -51,6 +52,7 @@ const Footer = () => {
           <li>
             <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
               Contact
+            <Link to='../contact/Contact.js'></Link>
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
             </span>
           </li>
